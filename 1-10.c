@@ -12,7 +12,7 @@ void copy();
 int main()
 {
     int len;
-    extern  int max;
+    extern int max;
     extern char longest[];
 
     max = 0;
@@ -43,4 +43,14 @@ int getline(void)
     }
     line[i] = '\0';
     return i;
+}
+
+void copy()
+{
+    int i;
+    extern char line[], longest[];
+
+    i = 0;
+    while(line[i] = longest[i] != '\0')
+        ++i;
 }
